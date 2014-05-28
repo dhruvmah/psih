@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  margin:0;
+  padding:0;
+   font-family: 'Lato', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/BebasNeue.ttf');
+}
+
+#banner {
+  margin: 0;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  width: 100%;
+}
+
+#banner img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
