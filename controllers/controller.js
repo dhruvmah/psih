@@ -25,7 +25,7 @@ exports.admin = function(req, res) {
 //Page: individual page
 exports.person = function(req, res) {
 		Fuzzy.queryByRecipient(req.params.person, function(err, fuzzies) {
-			return res.render("person.ejs", {fuzzies: fuzzies});
+			return res.render("person.ejs", {fuzzies: fuzzies, person: req.params.person});
 		});
 	};
 

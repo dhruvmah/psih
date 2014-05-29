@@ -24,23 +24,62 @@
   <body>
 
 
-<div id="banner">
-  <img src= "/banner.png" />
-
-</div>
 
 
+<div id="container">
 
 
-    <p>
+  <form action="/submit" method="POST" id="form_one">
 
-      Dear 
-    </p>
+       <p> Dear </p> 
 
-  <form action="/submit" method="POST">
       <select name="recipient">
-        <option value="dhruv">Dhruv</option>
-        <option value="kristyn">Kristyn</option>
+        <option value="blank">__________,</option>
+        <option value="dhruv">Dhruv,</option>
+        <option value="kristyn">Kristyn,</option>
+        <option value="olivia">Olivia,</option>
+        <option value="aaron">Aaron,</option>
+        <option value="tan">Tan,</option>
+        <option value="marvis">Marvis,</option>
+        <option value="hannah">Hannah,</option>
+        <option value="arielle">Arielle,</option>
+        <option value="casey">Casey,</option>
+        <option value="maryam">Maryam,</option>
+        <option value="adriana">Adriana,</option>
+        <option value="diana">Diana,</option>
+        <option value="lindsay">Lindsay,</option>
+        <option value="luke">Luke,</option>
+        <option value="thammika">Thammika,</option>
+        <option value="jiawen">Jiawen,</option>
+        <option value="stefan">Stefan,</option>
+        <option value="risha">Risha,</option>
+        <option value="eric">Eric,</option>
+        <option value="patricia">Patricia,</option>
+        <option value="james">James,</option>
+        <option value="shengwei">Shengwei,</option>
+        <option value="cosmo">Cosmo,</option>
+        <option value="hannah">Hannah,</option>
+        <option value="scott">Scott,</option>
+        <option value="peter">Peter,</option>
+      </select> <br />
+
+
+
+    
+    <textarea name="text" form="form_one"> Have something nice to say? </textarea>
+    <br />
+  <br />
+
+  <div id="signature">
+    Love, 
+    <br />
+
+
+      <select name="author">
+        <option value="blank">____________</option>
+        <option value="secret admirer"> Secret Admirer </option>
+        <option value="dhruv">Dhruv,</option>
+        <option value="kristyn">Kristyn,</option>
         <option value="olivia">Olivia</option>
         <option value="aaron">Aaron</option>
         <option value="tan">Tan</option>
@@ -65,23 +104,15 @@
         <option value="hannah">Hannah</option>
         <option value="scott">Scott</option>
         <option value="peter">Peter</option>
-        
-      </select>
+      </select> <br />
 
-    <input type="text" name="text" placeholder="Have something nice to say?"><br>
-
-    <input type="color" name="color" placeholder=""><br>
-  
-
-    <input type="text" name="author" placeholder="Secret Admirer?"><br>
+  </div>
 
     <input type="submit" />
 
 
   </form>
-  </div>
-
-
+</div>
 
 
 
