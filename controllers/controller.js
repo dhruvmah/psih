@@ -55,8 +55,8 @@ exports.create = function(req, res) {
 	    from: "PSIH 2014 <psih.fuzzies@gmail.com>",
 	    to: "dhwari@gmail.com",
 	    subject: "You got a psih fuzzy :)",
-	    text: "Visit ________/" + req.body.recipient + " to see your new fuzzy!",
-	    html: "Visit  <a href='________/" + req.body.recipient + "' to see your new fuzzy!"
+	    text: "Visit http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + " to see your new fuzzy!",
+	    html: "Click <a href='http://quiet-tor-9361.herokuapp.com/" + req.body.recipient + "'>here</a> to see your new fuzzy!"
 	}
 
 	smtpTransport.sendMail(mail, function(error, response){
