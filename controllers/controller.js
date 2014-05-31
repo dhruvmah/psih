@@ -50,12 +50,12 @@ exports.create = function(req, res) {
 		text : req.body.text,
 		color: req.body.color,
 		});
-	
+
 	var mail = {
 	    from: "PSIH 2014 <psih.fuzzies@gmail.com>",
-	    to: "to@gmail.com",
+	    to: "dhwari@gmail.com",
 	    subject: "You got a psih fuzzy :)",
-	    text: "Visit ________/" + req.body.recipient + " to see your new fuzzy!"
+	    text: "Visit ________/" + req.body.recipient + " to see your new fuzzy!",
 	    html: "Visit  <a href='________/" + req.body.recipient + "' to see your new fuzzy!"
 	}
 
