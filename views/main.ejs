@@ -8,7 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
     <title>PSIH Warm Fuzzies</title>
-
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+   <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
        <link href="/style.css" rel="stylesheet" type="text/css">
 
@@ -24,9 +25,25 @@
   <body>
 
 
+<div id="banner">
+    <div class="home-sticky"> 
+        <h1> Penn Social Impact House 2014 </h1>
+    </div>
 
 
-<div id="container">
+    <div class="home-sticky picture"> 
+    </div>
+
+    <div class="home-sticky instructions"> 
+        <p> Instructions: Pick someone. Write something. </p>
+    </div>
+
+
+</div>
+
+
+
+<div id="home-container" class="home-sticky sticky-form">
 
 
   <form action="/submit" method="POST" id="form_one">
@@ -58,17 +75,21 @@
         <option value="james">James,</option>
         <option value="shengwei">Shengwei,</option>
         <option value="cosmo">Cosmo,</option>
-        <option value="hannah">Hannah,</option>
+        <option value="hannah c.">Hannah C.,</option>
         <option value="scott">Scott,</option>
         <option value="peter">Peter,</option>
+        <option value="sarita">Sarita,</option>
+        <option value="kaveh">Kaveh,</option>
+        <option value="jonathan">Jonathan,</option>
+        <option value="gray">Gray,</option>
+        <option value="hannah l.">Hannah L.,</option>
+
+
       </select> <br />
 
-
-
     
-    <textarea name="text" form="form_one"> Have something nice to say? </textarea>
+    <textarea name="text" form="form_one" id="textarea"></textarea>
     <br />
-  <br />
 
   <div id="signature">
     Love, 
@@ -101,20 +122,30 @@
         <option value="james">James</option>
         <option value="shengwei">Shengwei</option>
         <option value="cosmo">Cosmo</option>
-        <option value="hannah">Hannah</option>
+        <option value="hannah c.">Hannah C.,</option>
         <option value="scott">Scott</option>
         <option value="peter">Peter</option>
-      </select> <br />
+        <option value="sarita">Sarita,</option>
+        <option value="kaveh">Kaveh,</option>
+        <option value="jonathan">Jonathan,</option>
+        <option value="gray">Gray,</option>
+        <option value="hannah l.">Hannah L.,</option>
+        <option value="ben cole">Ben Cole,</option>
+
+
+      </select>
 
   </div>
 
-    <input type="submit" />
+    <input id="submit" type="submit" />
 
 
   </form>
 </div>
 
 
+    <div class="home-sticky picture2"> 
+    </div>
 
 
 

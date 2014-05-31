@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var Project = require('./models/fuzzies.js').Fuzzy;
 var mongoose = require("mongoose");
+var mailer = require('nodemailer');
 
 var uristring =
 	process.env.MONGOLAB_URI ||

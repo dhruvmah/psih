@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900italic' rel='stylesheet' type='text/css'>
+
+       <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+
      <link href="/style.css" rel="stylesheet" type="text/css">
     <meta name="description" content="">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
 
     <title>Penn Open Source</title>
     <script>
@@ -39,23 +43,22 @@
   <body>
 
 
-<div id="person-banner">
-
- <p> Hey! <%= person %> </p>
- PSIH Loves you. 
-
-
-</div>
-
-
 <div id="container">
 
 
     <% fuzzies.forEach(function(fuzzy, index){ %>
   
               <div class="sticky">
-                    <p> <%= fuzzy.text %>  </p>
-                    <p> <%= fuzzy.author %> </p>
+                    <p> Dear <%= person %>, </p>
+                    <br />
+
+                    <p> <%= fuzzy.text %>  </p> <br />
+
+                    <div class="sticky-signature">
+                      <p> Love, </p> 
+                      <br />
+                      <p> <%= fuzzy.author %> </p>
+                    </div>
 
                </div>
 

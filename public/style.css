@@ -5,7 +5,8 @@ body {
   margin:0;
   padding:0;
    font-family: 'Lato', sans-serif;
-  background-color: #3498db;
+      background-image: url('cork.jpg');
+
 }
 
 @font-face {
@@ -22,53 +23,183 @@ body {
   width: 100%;
 }
 
-#banner img{
+#banner h1, h2, p {
+	margin: 0px;
+}
+
+#banner h1 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.sticky {
-	height: 200px;
-	width: 200px;
-	overflow: scroll;
-	margin-left: 10px;
-}
-
-#form {
+#banner img{
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: ;
 }
 
-#container p {
+.home-sticky {
+	background-color: #56C4E8;
+	width: 225px;
+	height: 225px;
+	overflow: scroll;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 2px;
+	float: left;
+	 -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+ 	 -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+ 	 box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+.picture {
+	background-image: url("group7.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: center;
+}
+
+.instructions {
+	background-color: #FCF0AD;
+}
+
+.picture2 {
+	margin-top: 25px;
+	background-image: url("group5.jpeg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: center;
+}
+
+textarea {
+	width: 180px;
+	height: 100px;
+	margin-left: 20%;
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	font-family: 'Pacifico';
+  background-image: url('pink.png');
+	border-radius: 5px;
+}
+
+
+#home-container {
+	margin-top: 25px;
+	width: 400px;
+	margin-right: auto;
+	margin-left: 70px;
+	clear: both;
+}
+
+#home-container p {
 	display: inline-block;
 }
 
-#signature {
-	margin-left: 300px;
+#submit {
+	display: inline-block;
+	margin-left: 40px;
 }
 
-select {
-	border: 0;
-	font-size: 32px;
-	-webkit-appearance: none;
-	padding: 4px;
-	background-color: #3498db;
+.sticky-form {
+  background-image: url('pink.png');
+
+}
+
+form {
+	font-family: 'Pacifico';
+	margin: 0px;
+  background-image: url('pink.png');
+	padding: 0px;
 }
 
 #container {
 	font-size: 32px;
 	padding: 40px;
+   background-image: url('cork.jpg');
+   height: 100%;
 }
 
-form {
-	font-size: 32px;
-	margin-left: 70px;
+#container p {
+	display: inline-block;
+
 }
 
-textarea {
-	width: 400px;
-	height: 200px;
-	margin-left: 30px;
+ #container .sticky:nth-child(even){
+  background-image: url('pink.png');
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size: 22px;
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
 }
+ #container .sticky:nth-child(odd){
+   font-family: 'Pacifico';
+  background-color: #FCF0AD;
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+ #container .sticky:nth-child(5n){
+ background-color: #56C4E8;
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+
+.sticky {
+	width: 225px;
+	overflow: scroll;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 2px;
+	float: left;
+	 -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+ 	 -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+ 	 box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+#signature {
+	font-family: 'Pacifico';
+	margin-left: 160px;
+	display: inline-block;
+}
+
+.sticky-signature {
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+select {
+	border: 0;
+	-webkit-appearance: none;
+	padding: 4px;
+  background-image: url('pink.png');
+  	font-size: 16px;
+	font-family: 'Pacifico';
+}
+
 

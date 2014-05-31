@@ -3,6 +3,18 @@ var mongoose = require('mongoose');
 var async = require("async");
 var fs=require('fs');
 var sys=require('sys');
+var mailer = require('nodemailer');
+
+
+// Use Smtp Protocol to send Email
+var smtpTransport = mailer.createTransport("SMTP",{
+    service: "Gmail",
+    auth: {
+        user: "psih.fuzzies@gmail.com",
+        pass: "psihrocks"
+    }
+});
+
 
 var ObjectId= mongoose.Types.ObjectId;
 
@@ -38,6 +50,24 @@ exports.create = function(req, res) {
 		text : req.body.text,
 		color: req.body.color,
 		});
+	
+	var mail = {
+	    from: "PSIH 2014 <psih.fuzzies@gmail.com>",
+	    to: "to@gmail.com",
+	    subject: "You got a psih fuzzy :)",
+	    text: "Visit ________/" + req.body.recipient + " to see your new fuzzy!"
+	    html: "Visit  <a href='________/" + req.body.recipient + "' to see your new fuzzy!"
+	}
+
+	smtpTransport.sendMail(mail, function(error, response){
+	    if(error){
+	        console.log(error);
+	    }else{
+	        console.log("Message sent: " + response.message);
+	    }
+	    
+	    smtpTransport.close();
+	});
 
 	fuzzy.save(function(err, fuzzy) {
 		if(err) {console.log(err);
